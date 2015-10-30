@@ -277,7 +277,7 @@ class LHC(callbacks.Plugin):
                     thetime = time.strptime(thetime,"%a, %d %b %Y %H:%M:%S +0200")
                 timestamp = time.strftime("%H:%M",thetime)
                 description = conv(d['description'])
-                headlines.append((title, timestamp, description))
+                headlines.append((funkify_title_probably(title), timestamp, description))
         return headlines
         
     ## this should, with a small probability, remind us of the days when
